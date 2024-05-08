@@ -44,9 +44,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 2.3rem 12%;
+    padding: 2.2rem 12%;
     background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,7 +133,7 @@ section{
 }
 
 .home-image img:hover{
-    box-shadow: 0 0 25px var(--main-color),0 0 50px var(--main-color),0 0 100px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),0 0 50px var(--main-color),0 0 100px var(--second-bg-color);
 }
 
 .social-icons a{ 
@@ -173,7 +173,7 @@ section{
 }
 
 .about-image img:hover{
-    box-shadow: 0 0 25px var(--main-color),0 0 50px var(--main-color),0 0 100px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),0 0 50px var(--main-color),0 0 100px var(--second-bg-color);
 }
 
 .about-content h2{
@@ -183,4 +183,55 @@ section{
 
 .about-content p{
     font-size: 1.8rem;
+}
+
+.photography{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 0px 20px;
+    background-color: var(--bg-color);
+    gap: 10rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32vw;
+    border-radius: 50%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    
+}
+
+.column img{
+    padding-bottom: 5px;
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+.column img:hover{
+    box-shadow: 0 0 25px var(--main-color),0 0 50px var(--main-color),0 0 100px var(--second-bg-color);
+    scale: 2.0;
+    padding-bottom: 0px;
+}
+
+.photography-content{
+    width: 40vw;
+    text-align: left;
+}
+.photography-content h3{
+    font-size: 6rem;
+    text-align: left;
+}
+
+.photography-content p{
+    font-size: 1.7rem;
 }
